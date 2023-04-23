@@ -1,4 +1,4 @@
-import javax.swing*.;
+import javax.swing.*;
 
 public class GUI {
     public static void main(String[] args) {
@@ -27,9 +27,8 @@ public class GUI {
      // We then display the server's response in the text area.
         button.addActionListener(e -> {
             String message = textField.getText();
-           // Call the client's method to send the message to the server.
-            textArea.append("Answer to the server:\n");
-
+            // Call the client's method to send the message to the server.
+            textArea.append("Answer to the server: %s \n".formatted(message));
 
             // Show the server answer in the JTextArea
         });
